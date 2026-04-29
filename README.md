@@ -1,57 +1,87 @@
-📊 Customer Churn Analysis – Key Insights
-🔹 Overall Churn Trend
-The dataset shows a considerable churn rate (~26–27%), indicating a retention problem that needs attention.
-🔹 Demographic Insights
-Gender has no significant impact on churn → churn is gender-neutral.
-Senior Citizens show a higher churn rate, suggesting pricing or service usability issues for this segment.
-🔹 Customer Tenure
-Customers with low tenure (<12 months) have the highest churn.
-Churn probability decreases as tenure increases, indicating that long-term customers are more stable.
-🔹 Contract Type (Strongest Predictor)
-Month-to-month contracts → highest churn (~40%+)
-1-year contracts → moderate churn
-2-year contracts → lowest churn (~10% or less)
+# 📊 Customer Churn Analysis
 
-👉 Insight: Lack of long-term commitment leads to higher churn.
+## 📌 Project Overview
+This project performs Exploratory Data Analysis (EDA) on customer data to identify key factors influencing customer churn. The goal is to understand patterns and provide insights that can help improve customer retention.
 
-🔹 Internet Service Analysis
-Fiber Optic users → highest churn (~40%+)
-DSL users → moderate churn
-No internet users → minimal churn
+---
 
-👉 Insight: Fiber service may be costly or underperforming, causing dissatisfaction.
+## 🎯 Objective
+- Analyze customer behavior
+- Identify key churn drivers
+- Provide business insights for retention strategies
 
-🔹 Value-Added Services Impact
+---
 
-Customers without these services show significantly higher churn:
+## 📂 Dataset
+- Telco Customer Churn Dataset
+- Contains customer demographics, services, and churn status
 
-❌ No Online Security → high churn
-❌ No Online Backup → high churn
-❌ No Device Protection → high churn
-❌ No Tech Support → high churn
+---
 
-✔ Customers using these services have much lower churn rates
+## 🔍 Key Insights
 
-👉 Insight: These services increase customer stickiness and trust
+### 📉 Churn Distribution
+- Overall churn rate is approximately **26–27%**
 
-🔹 Services with Low Impact
-Phone Service → negligible impact
-Multiple Lines → minimal effect
-Streaming TV & Movies → no strong influence
+### 👥 Demographics
+- Gender has **no significant impact**
+- **Senior citizens churn more**
 
-👉 Insight: Entertainment and basic connectivity are not key churn drivers
+### ⏳ Tenure
+- Customers with **low tenure (<1 year)** churn the most  
+- Long-term customers are more stable  
 
-✅ Final Business Conclusion
+### 📄 Contract Type
+- **Month-to-month → highest churn**
+- Long-term contracts → lower churn  
 
-Customer churn is primarily influenced by:
+### 🌐 Internet Service
+- **Fiber optic users → highest churn**
+- DSL → moderate  
+- No internet → lowest  
 
-Short-term contracts
-Low customer tenure
-Fiber optic internet dissatisfaction
-Lack of support and security services
-💡 (Optional for GitHub – Strong Addition)
-🚀 Recommendations
-Encourage long-term contracts with discounts
-Improve fiber service quality or pricing strategy
-Bundle security & support services
-Focus retention strategies on new customers (0–1 year)
+### 🛡️ Value-Added Services
+Customers without these services show higher churn:
+- Online Security  
+- Online Backup  
+- Device Protection  
+- Tech Support  
+
+👉 These services significantly improve retention
+
+### 📺 Low Impact Features
+- Phone Service  
+- Multiple Lines  
+- Streaming TV & Movies  
+
+---
+
+## 📊 Visualizations Included
+- Churn by Contract Type  
+- Churn by Internet Service  
+- Churn by Tenure  
+- Service-wise churn comparison  
+
+---
+
+## 🛠️ Tools & Technologies
+- Python  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
+
+---
+
+## ✅ Conclusion
+Customer churn is mainly driven by:
+- Short-term contracts  
+- Low tenure  
+- Fiber optic dissatisfaction  
+- Lack of support/security services  
+
+---
+
+## 🚀 Future Improvements
+- Build predictive model (Logistic Regression / Random Forest)
+- Create interactive dashboard (Power BI / Tableau)
